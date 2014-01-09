@@ -1,0 +1,46 @@
+            .axis path,
+            .axis line {
+                fill: none;
+                stroke: black;
+            }
+            .axis text {
+                font-family: sans-serif;
+                font-size: 15px;
+            }
+
+            .axislabel text{
+                font-size: 20px;
+                font-family: sans-serif;
+                text-anchor: middle;
+            }
+
+            circle:hover {
+                fill: orange;
+            }
+            
+            #tooltip {
+                position: absolute;
+                width: auto;
+                height: auto;
+                padding: 10px;
+                background-color: pink;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+                pointer-events: none;
+            }
+            
+            #tooltip.hidden {
+                display: none;
+            }
+            
+            #tooltip p {
+                margin: 0;
+                font-family: sans-serif;
+                font-size: 18px;
+                line-height: 20px;
+                text-align: center;
+            }
